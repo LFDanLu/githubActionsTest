@@ -6,13 +6,6 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - name: Use Node 16
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - name: install
-        run: npm install
-      - name: What is the pr info?
+      - name: modified
         run: |
-          echo 'blah'
+          echo "test"
